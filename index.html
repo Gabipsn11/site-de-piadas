@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piadas Aleatórias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="/icons/icon.png" sizes="192x192" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/icons/icon.png" alt="Logo" class="logo">
+            <h1>Piadas Aleatórias</h1>
+        </header>
+        <main>
+            <div id="joke" class="joke">Clique no botão para ver uma piada!</div>
+            <div class="buttons">
+                <button id="fetch-joke">Outra piada</button>
+                <button id="getLocation">Obter Localização</button>
+                <button id="capture">Capturar Foto</button>
+            </div>
+            <p id="location" class="location"></p>
+            <div class="camera">
+                <video id="video" width="320" height="240" autoplay></video>
+                <canvas id="canvas" width="320" height="240"></canvas>
+                <img id="photo" src="" alt="Sua foto">
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Piadas Aleatórias</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
